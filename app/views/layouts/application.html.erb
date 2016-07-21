@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+
+    <%= javascript_include_tag "http://www.englandkit.info/reminders/javascripts/prototype.js" %>
+    <%= javascript_include_tag "http://www.englandkit.info/reminders/javascripts/effects.js?" %>
+    <%= javascript_include_tag "http://www.englandkit.info/reminders/javascripts/dragdrop.js" %>
+    <%= javascript_include_tag "http://www.englandkit.info/reminders/javascripts/controls.js" %>
+    <%= javascript_include_tag "http://www.englandkit.info/reminders/javascripts/application.js" %>
+    <%= javascript_include_tag "http://www.englandkit.info/reminders/javascripts/active_scaffold/default/dhtml_history.js?" %>
+    <%= javascript_include_tag "http://www.englandkit.info/reminders/javascripts/active_scaffold/default/active_scaffold.js" %>
+    <%= javascript_include_tag "http://www.englandkit.info/reminders/javascripts/active_scaffold/default/rico_corner.js" %>
+    <%= javascript_include_tag "http://www.englandkit.info/reminders/javascripts/active_scaffold/default/form_enhancements.js" %>
+    <%= stylesheet_link_tag    "http://www.englandkit.info/reminders/stylesheets/active_scaffold/default/stylesheet.css" %>
+    <%= stylesheet_link_tag    "http://www.englandkit.info/reminders/stylesheets/mystyle.css" %>
+
+    <%thetitle = "1st For French Property Contacts #{controller.controller_name} #{controller.action_name}"%>
+    <title><%= thetitle %></title>
+  
+  </head>
+
+  <body >
+    <div class="ov-header">
+      <h2> 1st For French Property Contacts</h2>
+    </div>
+
+    <p style="color: green"><%= flash[:notice] %></p>
+
+    <%= render :partial => "users/user_bar" %>
+
+    <% if flash[:notice] %>  <p class="notice"><%= flash[:notice] %></p>  <% end %>
+    <% if flash[:error] %>  <p class="error"><%= flash[:error] %></p>  <% end %> 
+
+
+    <div class="main">
+      <%= yield  %>
+    </div>
+
+    <p><%= link_to "Home", {:host => 'www.englandkit.info/reminders', :controller => "/home"} %></p>
+
+    <div class="ov-footer">
+      <h4> Copyright: 1st-for-french-property.co.uk<br/>
+      Created by: Brandon-Crews Software 2009-2010</h4>
+    </div>
+
+  </body>
+</html>

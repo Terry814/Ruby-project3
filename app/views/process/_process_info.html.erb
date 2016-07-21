@@ -1,0 +1,237 @@
+<!-- The view to send out the updated process table -->
+<h2>Processing Jobs</h2>
+<table border="1">
+  <th>Job</th><th>Submitted At</th><th>Started At</th><th>pid</th><th>State</th><th>Exit Code</th><th>Stdout</th><th>Stderr</th>
+  <tr><td><%= link_to_remote "Read inbox", :url => {:host => 'www.englandkit.info/reminders', :action => "get_inbox"}, :update => 'job_info' %></td>
+    <% if @inbox %>
+      <td><%= @inbox.submitted_at %></td>
+      <td><%= @inbox.started_at %></td>
+      <td><%= @inbox.pid  %></td>
+      <td><%= @inbox.state  %></td>
+      <td><%= @inbox.exit_status  %></td>
+      <td><%= @inbox.stdout  %></td>
+      <td><%= @inbox.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Read sent", :url => {:host => 'www.englandkit.info/reminders', :action => "get_sent"}, :update => 'job_info' %></td>
+    <% if @sent %>
+      <td><%= @sent.submitted_at %></td>
+      <td><%= @sent.started_at %></td>
+      <td><%= @sent.pid  %></td>
+      <td><%= @sent.state  %></td>
+      <td><%= @sent.exit_status  %></td>
+      <td><%= @sent.stdout  %></td>
+      <td><%= @sent.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Parse Email", :url => {:host => 'www.englandkit.info/reminders', :action => "run_parse"}, :update => 'job_info' %></td>
+    <% if @parse %>
+      <td><%= @parse.submitted_at %></td>
+      <td><%= @parse.started_at %></td>
+      <td><%= @parse.pid  %></td>
+      <td><%= @parse.state  %></td>
+      <td><%= @parse.exit_status  %></td>
+      <td><%= @parse.stdout  %></td>
+      <td><%= @parse.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Match Email", :url => {:host => 'www.englandkit.info/reminders', :action => "run_match"}, :update => 'job_info' %></td>
+    <% if @match %>
+      <td><%= @match.submitted_at %></td>
+      <td><%= @match.started_at %></td>
+      <td><%= @match.pid  %></td>
+      <td><%= @match.state  %></td>
+      <td><%= @match.exit_status  %></td>
+      <td><%= @match.stdout  %></td>
+      <td><%= @match.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Create Reminders", :url => {:host => 'www.englandkit.info/reminders', :action => "run_reminders"}, :update => 'job_info' %></td>
+    <% if @createrem %>
+      <td><%= @createrem.submitted_at %></td>
+      <td><%= @createrem.started_at %></td>
+      <td><%= @createrem.pid  %></td>
+      <td><%= @createrem.state  %></td>
+      <td><%= @createrem.exit_status  %></td>
+      <td><%= @createrem.stdout  %></td>
+      <td><%= @createrem.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Send Reminders", :url => {:host => 'www.englandkit.info/reminders', :action => "send_reminders"}, :update => 'job_info' %></td>
+    <% if @sendrem %>
+      <td><%= @sendrem.submitted_at %></td>
+      <td><%= @sendrem.started_at %></td>
+      <td><%= @sendrem.pid  %></td>
+      <td><%= @sendrem.state  %></td>
+      <td><%= @sendrem.exit_status  %></td>
+      <td><%= @sendrem.stdout  %></td>
+      <td><%= @sendrem.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Create 6m Reminders", :url => {:host => 'www.englandkit.info/reminders', :action => "run_6m_reminders"}, :update => 'job_info' %></td>
+    <% if @create6mrem %>
+      <td><%= @create6mrem.submitted_at %></td>
+      <td><%= @create6mrem.started_at %></td>
+      <td><%= @create6mrem.pid  %></td>
+      <td><%= @create6mrem.state  %></td>
+      <td><%= @create6mrem.exit_status  %></td>
+      <td><%= @create6mrem.stdout  %></td>
+      <td><%= @create6mrem.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Send 6m Reminders", :url => {:host => 'www.englandkit.info/reminders', :action => "send_6m_reminders"}, :update => 'job_info' %></td>
+    <% if @send6mrem %>
+      <td><%= @send6mrem.submitted_at %></td>
+      <td><%= @send6mrem.started_at %></td>
+      <td><%= @send6mrem.pid  %></td>
+      <td><%= @send6mrem.state  %></td>
+      <td><%= @send6mrem.exit_status  %></td>
+      <td><%= @send6mrem.stdout  %></td>
+      <td><%= @send6mrem.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+   <tr><td><%= link_to_remote "Create customer followups", :url => {:host => 'www.englandkit.info/reminders', :action => "run_fus"}, :update => 'job_info' %></td>
+    <% if @createfus %>
+      <td><%= @createfus.submitted_at %></td>
+      <td><%= @createfus.started_at %></td>
+      <td><%= @createfus.pid  %></td>
+      <td><%= @createfus.state  %></td>
+      <td><%= @createfus.exit_status  %></td>
+      <td><%= @createfus.stdout  %></td>
+      <td><%= @createfus.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Send Followups", :url => {:host => 'www.englandkit.info/reminders', :action => "send_fus"}, :update => 'job_info' %></td>
+    <% if @sendfus %>
+      <td><%= @sendfus.submitted_at %></td>
+      <td><%= @sendfus.started_at %></td>
+      <td><%= @sendfus.pid  %></td>
+      <td><%= @sendfus.state  %></td>
+      <td><%= @sendfus.exit_status  %></td>
+      <td><%= @sendfus.stdout  %></td>
+      <td><%= @sendfus.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Run Enquiries", :url => {:host => 'www.englandkit.info/reminders', :action => "run_enquiries"}, :update => 'job_info' %></td>
+    <% if @runenquiries %>
+      <td><%= @runenquiries.submitted_at %></td>
+      <td><%= @runenquiries.started_at %></td>
+      <td><%= @runenquiries.pid  %></td>
+      <td><%= @runenquiries.state  %></td>
+      <td><%= @runenquiries.exit_status  %></td>
+      <td><%= @runenquiries.stdout  %></td>
+      <td><%= @runenquiries.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr><td><%= link_to_remote "Run Dummy", :url => {:host => 'www.englandkit.info/reminders', :action => "run_dummy"}, :update => 'job_info' %></td>
+    <% if @rundummy %>
+      <td><%= @rundummy.submitted_at %></td>
+      <td><%= @rundummy.started_at %></td>
+      <td><%= @rundummy.pid  %></td>
+      <td><%= @rundummy.state  %></td>
+      <td><%= @rundummy.exit_status  %></td>
+      <td><%= @rundummy.stdout  %></td>
+      <td><%= @rundummy.stderr  %></td>
+    <% else %>
+      <td>Not run recently</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <% end %>
+  </tr>
+</table>
+<p></p>
+<div id="job_info">
+
+</div>

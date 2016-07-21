@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Ajax Demo</title>
+    <%= javascript_include_tag "prototype" %>
+  </head>
+  <body>
+    <h1>What time is it?</h1>
+    <div id="time_div">
+      <%= periodically_call_remote(:url => {:host => 'www.englandkit.info/reminders', :action => :say_when}, :update => 'time_div', :position => "after") %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <p> <%= @fup['greeting'] %> </p>
+
+    <p> <%= @fup['preamble'] %> </p>
+
+    <% if @fup['lines'].size > 0 %>
+      <p> <%= @fup['preregions'] %> </p>
+        
+      <table>
+        <%= render(:partial => "followup/fu_line", :collection => @fup['lines']) %>
+      </table>
+    <% end %>
+
+    <p> <%= @fup['postamble'] %> </p>
+    <p> <%= @fup['signoff'] %> </p>
+    <p> <%= @fup['signature'] %> </p>
+
+    <p><Strong>Unsubscribe:</Strong><BR>
+    <%= "#{@fup['rmv_txt']}" %><%= "#{ @fup['cust_id']}" %></p>
+  
+  </body>
+</html>

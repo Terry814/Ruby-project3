@@ -1,0 +1,26 @@
+<h2>Admin Interface</h2>
+<table border="1">
+  <tr><td><%= link_to "Agents", {:host => 'www.englandkit.info/reminders',:controller => "/admin/agent"} %></td></tr>
+  <tr><td><%= link_to "Agent Reminders", {:host => 'www.englandkit.info/reminders',:controller => "/admin/agent_reminder"} %></td></tr>
+  <tr><td><%= link_to "Agent 6m Reminders", {:host => 'www.englandkit.info/reminders',:controller => "/admin/agent_reminder6m"} %></td></tr>
+  <tr><td><%= link_to "Customers", {:host => 'www.englandkit.info/reminders',:controller => "/admin/customer"} %></td></tr>
+  <tr><td><%= link_to "Tagged Customers", {:host => 'www.englandkit.info/reminders',:controller => "/admin/agent_customer"} %></td></tr>
+  <tr><td><%= link_to "Customer Followup", {:host => 'www.englandkit.info/reminders',:controller => "/admin/customer_fu"} %></td></tr>
+  <tr><td><%= link_to "Unmatched", {:host => 'www.englandkit.info/reminders',:controller => "/admin/unmatched_recipient"} %></td></tr>
+  <tr><td><%= link_to "Agent Reminder settings", {:host => 'www.englandkit.info/reminders',:controller => "/admin/agent_reminders_settings"} %></td></tr>
+  <tr><td><%= link_to "Raw Enquiries", {:host => 'www.englandkit.info/reminders',:controller => "/admin/raw_enquiries"} %></td></tr>
+  <tr><td><%= link_to "Region Default Agents", {:host => 'www.englandkit.info/reminders',:controller => "/admin/region_defaults"} %></td></tr> 
+  <tr><td><%= link_to "Spam Checks", {:host => 'www.englandkit.info/reminders',:controller => "/admin/spam_check"} %></td></tr> 
+</table>
+
+<h2>Other links</h2>
+<p><%= link_to "Processing", {:host => 'www.englandkit.info/reminders',:controller => "process"} %></p>
+<p><%= link_to "Reminder Emails", {:host => 'www.englandkit.info/reminders',:controller => "rememail"} %></p>
+<p><%= link_to "Customer Followup Emails", {:host => 'www.englandkit.info/reminders',:controller => "fuemail"} %></p>
+
+
+<h2>Actions</h2>
+<p><%= link_to "Delete all unmatched addresses", {:host => 'www.englandkit.info/reminders',:controller => "home", :action => "empty_unmatched"} %></p>
+<p><%= link_to "Unsubscribe customer", {:host => 'www.englandkit.info/reminders',:controller => "home", :action => "remove_customer"} %></p>
+<p><%= link_to "Show test enquiry emails", {:host => 'www.englandkit.info/reminders',:controller => "home", :action => "show_test_emails"} %></p>
+<p><%= link_to "Clear test enquiry emails", {:host => 'www.englandkit.info/reminders',:controller => "home", :action => "clear_test_emails"} %></p>

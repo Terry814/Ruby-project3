@@ -1,0 +1,12 @@
+body {background-color:white}
+
+.ov-header {background-color:lightgreen; height:50px; text-align:center}
+.sub-header {background-color:yellow; height:30px; text-align:left}
+.page-header {background-color:yellow; height:30px; text-align:center}
+
+.ov-footer {background-color:lightgreen; height:40px}
+.sub-footer {background-color:yellow; height:20px; text-align:left}
+.page-footer {background-color:yellow; height:20px; text-align:right; font-size:20px}
+
+.main {background-color:#white}
+.myp1 {background-color:blue; height:50px; text-align:left; font-size:30px}

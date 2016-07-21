@@ -1,0 +1,10 @@
+<h1><%= "Remove Customer Number #{@cust_id} From 1st-for-french-property" %></h1>
+
+<p>Please enter the email address you used with 1st-for-french-property so that we can cross-check it to ensure accurate customer removal</p>
+
+<% form_tag(:host => 'www.englandkit.info/reminders', :controller => 'customer', :action => 'delete')  do %>
+  <%= label_tag(:cust_email, "Email:") %>
+  <%= text_field_tag(:cust_email, @cust_email) %>
+  <%= hidden_field_tag(:cust_id, @cust_id) %>
+  <%= submit_tag("Remove") %>
+<% end %>

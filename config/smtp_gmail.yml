@@ -1,0 +1,6 @@
+--- 
+  :address: smtp.gmail.com
+  :port: 587
+  :user_name: 1st4frenchproperty@googlemail.com
+  :password: Louis@Fion@
+  :enable_starttls_auto: true

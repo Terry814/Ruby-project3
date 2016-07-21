@@ -1,0 +1,12 @@
+<h1><%= "Admin - Remove Customer From 1st-for-french-property by number and email" %></h1>
+
+<p>Please enter the id and email address that the customer used</p>
+
+<% form_tag(:host => 'www.englandkit.info/reminders', :controller => 'customer', :action => 'delete')  do %>
+  <p><%= label_tag(:cust_id, "Customer Id:") %>
+    <%= text_field_tag(:cust_id, @cust_id) %></p>
+  <p><%= label_tag(:cust_email, "Email:") %>
+    <%= text_field_tag(:cust_email, @cust_email) %></p>
+  <%= hidden_field_tag(:source, 'admin') %>
+  <%= submit_tag("Remove") %>
+<% end %>

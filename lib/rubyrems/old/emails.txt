@@ -1,0 +1,114 @@
+Logged in
+Message sent count: 36
+Found 2 emails
+Envelope: #<struct Net::IMAP::Envelope date="Thu, 4 Mar 2010 08:52:12 +0000", subject="Brian Hatch; 501425", from=[#<struct Net::IMAP::Address name="Howard Farmer", route=nil, mailbox="howard.farmer", host="1st-for-french-property.co.uk">], sender=[#<struct Net::IMAP::Address name="Howard Farmer", route=nil, mailbox="howard.farmer", host="1st-for-french-property.co.uk">], reply_to=[#<struct Net::IMAP::Address name=nil, route=nil, mailbox="request", host="1st-for-french-property.co.uk">], to=[#<struct Net::IMAP::Address name=nil, route=nil, mailbox="test", host="sales-biz.co.uk">], cc=nil, bcc=nil, in_reply_to=nil, message_id="<ad540121003040052v32cb649bw943f244532e4def1@mail.gmail.com>">
+Details: --0016e6dab570fee6c10480f5b619
+Content-Type: text/plain; charset=ISO-8859-1
+
+Test
+
+---------- Forwarded message ----------
+From: 1st for French Property <request@1st-for-french-property.co.uk>
+Date: Wed, Mar 3, 2010 at 8:50 PM
+Subject: Brian Hatch ; 501425
+To: request@1st-for-french-property.co.uk
+
+
+
+Client Details:
+Please Contact: Brian Hatch
+Client email: suewoodpeckers@btinternet.com
+Tel: 01794342400
+
+Agency: LindseyB
+Agent Ref: 501425
+
+Info Requested: would it be possible to view this property on the 20th march
+or the 21st thank
+
+An enquiry from 1st for French Property website
+
+--0016e6dab570fee6c10480f5b619
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Test<br><br><div class=3D"gmail_quote">---------- Forwarded message -------=
+---<br>From: <b class=3D"gmail_sendername">1st for French Property</b> <spa=
+n dir=3D"ltr">&lt;<a href=3D"mailto:request@1st-for-french-property.co.uk">=
+request@1st-for-french-property.co.uk</a>&gt;</span><br>
+Date: Wed, Mar 3, 2010 at 8:50 PM<br>Subject: Brian Hatch ; 501425<br>To: <=
+a href=3D"mailto:request@1st-for-french-property.co.uk">request@1st-for-fre=
+nch-property.co.uk</a><br><br><br><br>
+Client Details:<br>
+Please Contact: Brian Hatch<br>
+Client email: <a href=3D"mailto:suewoodpeckers@btinternet.com">suewoodpecke=
+rs@btinternet.com</a><br>
+Tel: 01794342400<br>
+<br>
+Agency: LindseyB<br>
+Agent Ref: 501425<br>
+<br>
+Info Requested: would it be possible to view this property on the 20th marc=
+h or the 21st thank<br>
+<br>
+An enquiry from 1st for French Property website<br>
+</div><br>
+
+--0016e6dab570fee6c10480f5b619--
+
+Envelope: #<struct Net::IMAP::Envelope date="Thu, 4 Mar 2010 08:53:33 +0000", subject="John Lee; aps1661", from=[#<struct Net::IMAP::Address name="Howard Farmer", route=nil, mailbox="howard.farmer", host="1st-for-french-property.co.uk">], sender=[#<struct Net::IMAP::Address name="Howard Farmer", route=nil, mailbox="howard.farmer", host="1st-for-french-property.co.uk">], reply_to=[#<struct Net::IMAP::Address name=nil, route=nil, mailbox="request", host="1st-for-french-property.co.uk">], to=[#<struct Net::IMAP::Address name=nil, route=nil, mailbox="test", host="sales-biz.co.uk">], cc=nil, bcc=nil, in_reply_to="<E1Nmur0-0001Fc-VJ@hkfaraa4.memset.net>", message_id="<ad540121003040053y3e3a4d8cj1a61540117833b1b@mail.gmail.com>">
+Details: --0016e64c3990d672d70480f5bbf3
+Content-Type: text/plain; charset=ISO-8859-1
+
+Test
+
+---------- Forwarded message ----------
+From: 1st for French Property <request@1st-for-french-property.co.uk>
+Date: Wed, Mar 3, 2010 at 8:07 PM
+Subject: John Lee; aps1661
+To: request@1st-for-french-property.co.uk
+
+
+
+Client Details:
+Please Contact: John Lee
+Client email: john.d.lee@btinternet.com
+Tel: 0044 7540 221847
+
+Agency: AntonyB
+Agent Ref: aps1661
+
+Info Requested: Any more photgraphs and details of the town , shops , market
+etc. I am looking for a town proeprty
+
+An enquiry from 1st for French Property website
+
+--0016e64c3990d672d70480f5bbf3
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Test<br><br><div class=3D"gmail_quote">---------- Forwarded message -------=
+---<br>From: <b class=3D"gmail_sendername">1st for French Property</b> <spa=
+n dir=3D"ltr">&lt;<a href=3D"mailto:request@1st-for-french-property.co.uk">=
+request@1st-for-french-property.co.uk</a>&gt;</span><br>
+Date: Wed, Mar 3, 2010 at 8:07 PM<br>Subject: John Lee; aps1661<br>To: <a h=
+ref=3D"mailto:request@1st-for-french-property.co.uk">request@1st-for-french=
+-property.co.uk</a><br><br><br><br>
+Client Details:<br>
+Please Contact: John Lee<br>
+Client email: <a href=3D"mailto:john.d.lee@btinternet.com">john.d.lee@btint=
+ernet.com</a><br>
+Tel: 0044 7540 221847<br>
+<br>
+Agency: AntonyB<br>
+Agent Ref: aps1661<br>
+<br>
+Info Requested: Any more photgraphs and details of the town , shops , marke=
+t etc. I am looking for a town proeprty<br>
+<br>
+An enquiry from 1st for French Property website<br>
+</div><br>
+
+--0016e64c3990d672d70480f5bbf3--
+
+Done

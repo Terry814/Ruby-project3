@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <p> <%= @reminder['greeting'] %> </p>
+
+    <p> <%= @reminder['preamble'] %> </p>
+
+    <table>
+      <tr><th>Customer</th><th>email</th> 
+      <th>Property</th><th>Date</th></tr>
+      <%= render(:partial => "reminder/reminder_line", :collection => @reminder['lines']) %>
+    </table>
+    
+    <p> <%= @reminder['postamble'] %> </p>
+    <p> <%= @reminder['signoff'] %> </p>
+    <p> <%= @reminder['signature'] %> </p>
+  </body>
+</html>

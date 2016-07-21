@@ -1,0 +1,13 @@
+<!-- view to render the process info periodically -->
+<html>
+  <head>
+    <title>Process Stats</title>
+    <%= javascript_include_tag "prototype" %>
+  </head>
+  <body>
+    <%= periodically_call_remote(:url => {:host => 'www.englandkit.info/reminders', :action => :update_process_info}, :update => 'job_stats') %>
+    <div id="job_stats">
+      <%= render :partial => "process_info" %>
+    </div>
+  </body>
+</html>

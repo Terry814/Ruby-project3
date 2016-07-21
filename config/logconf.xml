@@ -1,0 +1,14 @@
+<!-- Version 0.5 17/9/10 --> 
+<log4r_config>
+    <pre_config>
+        <global level="DEBUG"/>
+    </pre_config>
+
+    <outputter type="RollingFileOutputter" name="overall_file" maxsize='200000'
+          filename="/home/users/englandk/rails_apps/reminders/log/batch.log" trunc="true" level="INFO">
+     <formatter type="PatternFormatter" pattern="[%-5l %9c] %d :: %m"/>
+   </outputter>
+    
+   <logger name="reminders" level="INFO" outputters="overall_file"/>
+
+</log4r_config> 

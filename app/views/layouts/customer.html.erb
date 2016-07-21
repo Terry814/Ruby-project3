@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <title>Customer Removal</title>
+    <%= stylesheet_link_tag "mystyle" %>
+  </head>
+
+  <body >
+    <div class="ov-header">
+      <h2> 1st For French Property Contacts</h2>
+    </div>
+
+    <% if flash[:notice] %>  <p class="notice"><%= flash[:notice] %></p>  <% end %>  <% if flash[:error] %>  <p class="error"><%= flash[:error] %></p>  <% end %> 
+
+    <div class="main">
+      <%= yield  %>
+    </div>
+
+    <div class="ov-footer">
+      <h4> Copyright: 1st-for-french-property.co.uk 2009-2010<br/>
+      Created by: Brandon-Crews Software 2009-2010</h4>
+    </div>
+
+  </body>
+</html>
